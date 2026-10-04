@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Lintang Isa Mardani</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome untuk Ikon Media Sosial & Skills -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">PortofolioKu</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#projects">Proyek Stupen</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-avatar">
+                <img src="isa.jpeg" alt="Lintang Isa Madani">
+            </div>
+
+            <p class="greeting">Halo semua 👋, saya</p>
+            <h1>Lintang Isa Mardani</h1>
+            <h2>Mahasiswa</h2>
+            <p class="bio-short">
+                Sedang menempuh pendidikan tinggi di UNESA dan berfokus pada pengembangan aplikasi web modern, antarmuka pengguna (UI/UX), serta teknologi pemrograman web.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Lihat Proyek Saya</a>
+                <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-content">
+                <p>
+                    Saya adalah seorang mahasiswa Sains Data yang sedang mempelajari konsep-konsep Foundations of Web Development. Memiliki ketertarikan tinggi pada Frontend Web Development, perancangan sistem informasi, dan eksperimen dengan teknologi web terbaru. 
+                    Selain kegiatan perkuliahan, saya juga menjalankan Studi Independent di Celerates.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keahlian Section -->
+    <section id="skills" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Kemampuan & Teknologi</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fa-brands fa-html5 skill-icon"></i>
+                    <h3>HTML5</h3>
+                    <p>Semantik markup dasar, struktur form, dan standar tata letak web.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-css3-alt skill-icon"></i>
+                    <h3>CSS3 & Flexbox</h3>
+                    <p>Desain responsif, CSS Grid, animasi UI, dan kustomisasi variabel.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-bootstrap skill-icon"></i>
+                    <h3>Bootstrap 5</h3>
+                    <p>Pembuatan tata letak antarmuka cepat dengan sistem grid responsif.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-git-alt skill-icon"></i>
+                    <h3>Git & GitHub</h3>
+                    <p>Manajemen repositori proyek dan alur kerja kolaborasi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyek Stupen Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Proyek & Tugas Akademik</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-banner">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <div class="project-details">
+                        <span class="badge">Individual Challenge</span>
+                        <h3>Landing Page Portfolio Website</h3>
+                        <p>Pembuatan halaman "landing page" responsif berbasis HTML5 dan CSS3 murni sebagai bagian dari tugas modul Foundations of Web Development.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Responsive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-banner alt-banner">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <div class="project-details">
+                        <span class="badge">Group Challenge</span>
+                        <h3>Studi Kasus User Persona UI/UX</h3>
+                        <p>Riset simulasi pengguna (Simulated User Research) dan penyusunan User Persona Canvas untuk optimasi platform sistem pencarian kerja.</p>
+                        <div class="project-tags">
+                            <span>UI/UX Research</span>
+                            <span>Empathy Map</span>
+                            <span>Figma</span>
+                            <span>Canva</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Mari Terhubung</h2>
+            <p class="contact-subtitle">Punya pertanyaan, tawaran diskusi, atau ingin berkolaborasi dalam proyek?</p>
+            
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Terima kasih! Pesan Anda telah terkirim.');">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" placeholder="Masukkan nama Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Mahasiswa / Profesional</label>
+                    <input type="email" id="email" placeholder="contoh: nama@mahasiswa.ac.id" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" rows="4" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Lintang Isa Mardani. Dibuat untuk Tugas Individual Web Development.</p>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
